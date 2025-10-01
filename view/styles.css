@@ -1,0 +1,50 @@
+/*Manipula os componentes de estilizacao da combo box de telaPrincipal.fxml*/
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8px;
+    -fx-border-color: #272f38;
+    -fx-border-width: 3px;
+    -fx-border-radius: 8px;
+    -fx-padding: 0;
+} /*Fim de .combo-box*/
+
+/*Manipula os componentes de estilizacao da seta da combo box*/
+.combo-box .arrow {
+    -fx-background-color: white;
+} /*Fim de .arrow*/
+
+.combo-box .arrow-button {
+    -fx-background-color: rgba(0, 128, 255, 0.2); /* azul translúcido */
+    -fx-background-radius: 0 7px 7px 0;
+    -fx-padding: 0.333em 0.5em 0.333em 0.5em;
+} /*Fim de .arrow-button*/
+
+/*Manipula os componentes de estilizacao da celula escolhida da combo box*/
+.combo-box > .list-cell {
+    -fx-background-color: rgba(0, 128, 255, 0.2) !important; /* azul meio transparente */
+    -fx-background-radius: 7px 0 0 7px;
+    -fx-padding: 0.333em 0.667em 0.333em 0.667em;
+    -fx-text-fill: white;
+    -fx-font-family: "DejaVu Sans Bold";
+} /*Fim de > .list-cell*/
+
+/*Manipula os componentes de estilizacao da lista suspensa da combo box*/
+.combo-box .list-cell {
+    -fx-font-family: "DejaVu Sans Bold";
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+} /*Fim de .list-cell*/
+
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #b3d9ff;
+    -fx-text-fill: black;
+} /*Fim de .list-cell:hover*/
+
+.combo-box .list-cell:filled:selected,
+.combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: #0066cc;
+    -fx-text-fill: white;
+} /*Fim de .list-cell:selected*/
